@@ -12,10 +12,8 @@ const Header = () => {
   return (
     <header className="bg-white shadow-md">
       <div className="flex items-center justify-between px-6 py-4">
-        {/* Logo – Only visible on desktop */}
         <img src={bqk} alt="bqk" className="w-36 object-contain hidden md:block" />
 
-        {/* Desktop Menu */}
         <ul className="hidden md:flex items-center gap-6 font-semibold text-[18px]">
           <li><Link to="/">Əsas səhifə</Link></li>
           <li><Link to="/about">Haqqımızda</Link></li>
