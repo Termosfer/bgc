@@ -45,9 +45,9 @@ const Advantages: React.FC<IAdvantagesProps> = ({ bg }) => {
                   alt="icon"
                   className="w-16 h-16 mb-6 object-contain"
                 />
-                <h3 className="text-xl font-semibold text-gray-800 leading-relaxed">
+                <span className="text-xl font-semibold text-gray-800 leading-relaxed">
                   {d.title}
-                </h3>
+                </span>
               </div>
             </div>
           ))}
