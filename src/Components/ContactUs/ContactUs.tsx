@@ -18,8 +18,7 @@ const ContactUs: React.FC<ContactUsProps> = ({ bg }) => {
       title: "Ünvan",
       subtitle: [
         "Bakı şəh., Binəqədi rayonu,",
-        "Rəsulzadə qəsəbəsi",
-        "İ.Cümşüdov küçəsi 2F",
+        "Rəsulzadə qəsəbəsi, İ.Cümşüdov küçəsi 2F",
       ],
     },
     {
@@ -40,9 +39,9 @@ const ContactUs: React.FC<ContactUsProps> = ({ bg }) => {
           {data4.map((d, index) => (
             <div
               key={index}
-              className="flex flex-col gap-5 items-center text-center max-w-[300px]"
+              className="flex flex-col gap-5 items-center text-center max-w-[320px]"
             >
-              <img src={d.image} alt="icon" className="w-16" />
+              <img src={d.image} alt="icon" className=" w-16" />
               <h4 className="font-bold text-[22px]">{d.title}</h4>
               <div className="font-light space-y-1 text-[16px] leading-snug">
                 {d.subtitle.map((line, i) => (

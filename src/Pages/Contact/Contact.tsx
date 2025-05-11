@@ -3,7 +3,9 @@ import ContactUs from "../../Components/ContactUs/ContactUs";
 const Contact = () => {
   return (
     <div>
-      <img src={img} alt="img" className="w-full"/>
+      <div className="w-full h-[70vh] md:h-[90vh]">
+      <img src={img} alt="img" className="w-full h-full"/>
+      </div>
       <ContactUs bg={"#fff"}/>
     </div>
   );
