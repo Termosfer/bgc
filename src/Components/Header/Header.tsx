@@ -57,7 +57,7 @@ const Header = () => {
           </li>
           <li className="relative group">
             {" "}
-            {/* Group classını li elementinə əlavə edin */}
+            
             <Link
               to="/service"
               onClick={closeMenu}
@@ -65,11 +65,11 @@ const Header = () => {
             >
               Xidmətlər
             </Link>
-            <ul className="absolute left-1/2 -translate-x-1/2 mt-2  group-hover:flex flex-col bg-white shadow-lg text-black p-4 rounded-lg z-20 min-w-[220px] space-y-2">
+            {/* <ul className="absolute left-1/2 -translate-x-1/2 mt-2  group-hover:flex flex-col bg-white shadow-lg text-black p-4 rounded-lg z-20 min-w-[220px] space-y-2">
               <li className="py-1 hover:text-[#1d4ed8] transition-colors">
                 <Link to="/audit">Audit Xidməti</Link>
               </li>
-              {/* <li className="py-1 hover:text-[#1d4ed8] transition-colors">
+              <li className="py-1 hover:text-[#1d4ed8] transition-colors">
                 <Link to="/muhasibat">Mühasibat uçotu</Link>
               </li>
               <li className="py-1 hover:text-[#1d4ed8] transition-colors">
@@ -86,8 +86,8 @@ const Header = () => {
               </li>
               <li className="py-1 hover:text-[#1d4ed8] transition-colors">
                 <Link to="/meslehet">Məsləhət xidməti</Link>
-              </li> */}
-            </ul>
+              </li>
+            </ul> */}
           </li>
           <li>
             <Link to="/contact" onClick={closeMenu}>
