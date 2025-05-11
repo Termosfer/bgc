@@ -12,7 +12,8 @@ const Header = () => {
   return (
     <header className="bg-white shadow-md">
       <div className="flex items-center justify-between px-6 py-4">
-        <img src={bqk} alt="bqk" className="w-36 object-contain" />
+        {/* Logo – Only visible on desktop */}
+        <img src={bqk} alt="bqk" className="w-36 object-contain hidden md:block" />
 
         {/* Desktop Menu */}
         <ul className="hidden md:flex items-center gap-6 font-semibold text-[18px]">
@@ -22,26 +23,27 @@ const Header = () => {
           <li><Link to="/contact">Əlaqə</Link></li>
         </ul>
 
-        {/* Mobile Hamburger */}
         <button
           onClick={toggleMenu}
-          className="md:hidden text-2xl focus:outline-none"
+          className="md:hidden text-2xl  "
         >
           {isOpen ? <FiX /> : <FiMenu />}
         </button>
       </div>
 
-      {/* Mobile Menu */}
-      {isOpen && (
-        <div className="md:hidden bg-white px-6 pb-4 animate-fade-in-down">
-          <ul className="flex flex-col gap-4 text-[18px] font-semibold">
-            <li><Link to="/" onClick={closeMenu}>Əsas səhifə</Link></li>
-            <li><Link to="/about" onClick={closeMenu}>Haqqımızda</Link></li>
-            <li><Link to="/service" onClick={closeMenu}>Xidmətlər</Link></li>
-            <li><Link to="/contact" onClick={closeMenu}>Əlaqə</Link></li>
-          </ul>
-        </div>
-      )}
+     <div
+  className={`md:hidden overflow-hidden transition-[max-height,opacity,padding] duration-1200 ease bg-white px-6 flex flex-col items-center text-center ${
+    isOpen ? 'max-h-[500px] opacity-100 py-4' : 'max-h-0 opacity-0 py-0'
+  }`}
+>
+  <img src={bqk} alt="bqk" className="w-36 object-contain mb-4" />
+  <ul className="flex flex-col gap-4 text-[18px] font-semibold">
+    <li><Link to="/" onClick={closeMenu}>Əsas səhifə</Link></li>
+    <li><Link to="/about" onClick={closeMenu}>Haqqımızda</Link></li>
+    <li><Link to="/service" onClick={closeMenu}>Xidmətlər</Link></li>
+    <li><Link to="/contact" onClick={closeMenu}>Əlaqə</Link></li>
+  </ul>
+</div>
     </header>
   );
 };
