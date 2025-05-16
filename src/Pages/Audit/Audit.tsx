@@ -146,12 +146,12 @@ const Audit = () => {
             əhəmiyyətli maliyyə mənbələrinə qənaət etməklə yanaşı, müəssisənin
             cari maliyyə göstəricilərini də yaxşılaşdıra bilər.
           </p>
-        <ul className="space-y-2 md:text-[18px] text-base font-[300] mx-auto md:w-10/12 lg:w-9/12 xl:w-8/12 2xl:w-7/12 px-5 sm:px-5 md:px-4 lg:px-7 xl:px-4 2xl:px-9 list-disc list-inside marker:text-[8px] marker:text-black ">
-          {data4.map((d) => {
-            return <li>{d}</li>;
-          })}
-        </ul>
-          </div>
+          <ul className="space-y-2 md:text-[18px] text-base font-[300] mx-auto md:w-10/12 lg:w-9/12 xl:w-8/12 2xl:w-7/12 px-5 sm:px-5 md:px-4 lg:px-7 xl:px-4 2xl:px-9 list-disc list-inside text-black ">
+            {data4.map((d) => {
+              return <li>{d}</li>;
+            })}
+          </ul>
+        </div>
       </section>
       <ContactUs bg={"#f5f5f5"} />
     </>

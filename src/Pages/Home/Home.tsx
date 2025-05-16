@@ -4,11 +4,12 @@ import scale from "../../assets/6715.jpg.webp";
 import muhasibat from "../../assets/mhasibat_ikon.png.webp";
 import maliyye from "../../assets/maliyye_ikon.png.webp";
 import audit from "../../assets/audit_ikon.png.webp";
-import meslehet from "../../assets/meslehet_xicmeti.png.webp";
+import meslehet from "../../assets/2169346.png";
 import autsorsinq from "../../assets/autsorsinq.png.webp";
 import vergi from "../../assets/vergitutma.png.webp";
 import huquq from "../../assets/hquq_v_vkil.png.webp";
 import hr from "../../assets/hr.png.webp";
+import c from "../../assets/11256101.png";
 
 import AboutUs from "../../Components/AboutUs/AboutUs";
 import Advantages from "../../Components/Advantages/Advantages";
@@ -29,23 +30,27 @@ const Home = () => {
     },
     {
       image: meslehet,
-      title: "Məsləhət xidməti",
+      title: "Qida Təhlükəsizliyi",
     },
     {
       image: autsorsinq,
-      title: "Autsorsing",
+      title: "Dövlət satınalmaları",
     },
     {
       image: vergi,
-      title: "Vergitutma",
+      title: "Vergi məsələləri ",
     },
     {
       image: huquq,
-      title: "Hüquq və vəkil xidməti",
+      title: "Hüquqi məsləhət və vəkil xidməti",
     },
     {
       image: hr,
       title: "İnsan Resursları (HR) üzrə xidmətlər",
+    },
+    {
+      image: c,
+      title: "1C 8.3 Müəssisə proqram təminatı üzrə xidmətlər",
     },
   ];
 
@@ -64,11 +69,11 @@ const Home = () => {
     },
     {
       image: img,
-      title: "Xidmətlər",
+      title: "Xidmət sektoru",
     },
     {
       image: img,
-      title: "Mediya",
+      title: "Media və kommunikasiya",
     },
     {
       image: img,
@@ -80,7 +85,7 @@ const Home = () => {
     },
     {
       image: img,
-      title: "Otel işi",
+      title: "Hotelçilik",
     },
     {
       image: img,
@@ -89,6 +94,10 @@ const Home = () => {
     {
       image: img,
       title: "Logistika və nəqliyyat",
+    },
+    {
+      image: img,
+      title: "İçtimai iaşə",
     },
   ];
 
@@ -110,11 +119,13 @@ const Home = () => {
 
               <div className="space-y-6">
                 <p className="text-base md:text-lg leading-relaxed text-gray-600">
-                  Dövlətin qanunvericiliyinin icrasının təmin edilməsi, Dövlətin
-                  siyasi kursuna əməl edilməsi, Dövlətin maraqlarının qorunması
-                  və şəxslərə hüquq və vəzifələri barədə qanunvericiliyin
-                  tələblərinin çatdırılması, insanların hüquq və azadlıqlarının
-                  təminatı!
+                  Sahibkarlıq subyektlərinin cari problemlərin həll etməsinə
+                  yardımçı olmaq, biznes proseslərinin optimallaşdırması,
+                  hüquqazidd müdaxilələrin minimuma endirilməsi, biznesin
+                  inkişaf etdirilməsində tövsiyələrin verilməsi, xərclərə hüquq
+                  müstəvisində nəzarətin təmin olunması və inkişaf
+                  strategiyasının həyata keçirməsi, nəticədə mümkün problemlərin
+                  yaranmasının qarşısının alınmasıdır.
                 </p>
                 <p className="text-base md:text-lg leading-relaxed text-gray-600">
                   Fəaliyyət dövrü ərzində ölkənin qanunlarının icrasına nail
@@ -139,12 +150,11 @@ const Home = () => {
         <div className="text-center  mx-auto">
           <h3 className="text-[40px] font-semibold mb-10">Xidmətlərimiz</h3>
           <p className="px-5 md:px-0  xl:w-[45%] 2xl:w-[35%] mx-auto text-[20px] leading-[2] font-[300]">
-            Digər konsaltinq şirkətlərindən fərqli olaraq “Biznes Qarant
-            Konsaltinq” müəssisəsi sahibkarın maraqlarını nəzərə alaraq, müəyyən
-            dərəcədə (razılıq əsasında) güzəşt tətbiq edir. Vizyonumuz irili,
-            xırdalı hər bir sahibkarı əsl keyfiyyətli xidmətlə təmin etməkdir.
-            Xidmətlərimizi daha dolğun şəkildə tam təfsilatı ilə sizlərə təqdim
-            edirik.
+            Digər konsaltinq şirkətlərindən fərqli olaraq Biznes Qarant
+            Konsaltinq sahibkarın maraqlarını diqqətdə saxlayaraq qarşılıqlı
+            razılaşma əsasında müəyyən güzəştlər tətbiq edir. Hədəfimiz istər
+            kiçik, istərsə də iri sahibkarları aşağıdakı sahələr üzrə yüksək
+            keyfiyyətli və etibarlı xidmətlərlə təmin etməkdir.
           </p>
         </div>
         <div
@@ -173,9 +183,7 @@ const Home = () => {
             Fəaliyyət Sahələri
           </h3>
           <p className="xl:w-[45%] 2xl:w-[35%] mx-auto text-[20px] leading-[2] font-[300]">
-            Biznes Qarant Konsaltinq xidmətlərinin istehlakçıları vahid sənaye
-            təşkilatları, kiçik və orta biznesin nümayəndələri, həm də çoxşaxəli
-            böyük şirkətlərdir.
+            Biznes Qarant Konsaltinq sənaye müəssisələri, kiçik və orta biznes subyektləri, eləcə də iri və çoxşaxəli şirkətlərlə əməkdaşlıq edir.
           </p>
         </div>
         <div className="grid  grid-cols-1 md:grid-cols-2 mx-auto w-full  md:w-3/4  lg:mx-[20%] sm:px-5 py-20">

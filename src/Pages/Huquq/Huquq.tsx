@@ -36,7 +36,7 @@ const Huquq = () => {
           <h1 className="text-3xl md:text-4xl font-bold text-gray-800 mb-6">
             Hüquqi xidmətlər
           </h1>
-          <ul className="list-disc list-outside pl-3 2xl:pl-3 text-black space-y-3 text-base md:text-[16px] font-light marker:text-[8px] marker:text-black">
+          <ul className="list-disc list-outside pl-3 2xl:pl-3 text-black space-y-3 text-base md:text-[16px] font-light ">
             {data.map((d, index) => {
               return <li key={index}>{d}</li>;
             })}

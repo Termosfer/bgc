@@ -31,19 +31,19 @@ const ContactUs: React.FC<ContactUsProps> = ({ bg }) => {
   return (
     <section style={{ backgroundColor: bg }}>
       <div className="max-w-screen-xl mx-auto px-4 py-20">
-        <div className="text-center mb-16">
+        <div className="flex items-center justify-center mb-16">
           <h3 className="text-[36px] sm:text-[40px] font-semibold">Əlaqə</h3>
         </div>
 
-        <div className="flex flex-col items-center gap-14 lg:flex-row lg:justify-evenly">
+        <div className="flex flex-col items-baseline gap-14 lg:flex-row lg:justify-evenly">
           {data4.map((d, index) => (
             <div
               key={index}
-              className="flex flex-col gap-5 items-center text-center max-w-[320px]"
+              className="flex flex-col gap-5 items-center justify-center "
             >
-              <img src={d.image} alt="icon" className=" w-16" />
+              <img src={d.image} alt={d.title} className="w-16" />
               <h4 className="font-bold text-[22px]">{d.title}</h4>
-              <div className="font-light space-y-1 text-[16px] leading-snug">
+              <div className="font-light space-y-1 text-[16px] ">
                 {d.subtitle.map((line, i) => (
                   <div key={i}>{line}</div>
                 ))}

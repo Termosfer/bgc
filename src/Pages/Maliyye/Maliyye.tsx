@@ -48,7 +48,7 @@ const Maliyye = () => {
             borcalanları) maliyyə-təsərrüfat fəaliyyətlərinin monitorinqi üçün
             bütün xidmətləri göstərir.
           </p>
-          <ul className="list-disc list-outside pl-3 2xl:pl-3 text-black space-y-3 text-base md:text-[16px] font-light marker:text-[8px] marker:text-black">
+          <ul className="list-disc list-outside pl-3 2xl:pl-3 text-black space-y-3 text-base md:text-[16px] font-light text-black">
             {data.map((d, index) => {
               return <li key={index}>{d}</li>;
             })}
@@ -65,7 +65,7 @@ const Maliyye = () => {
             xidmətlər, habelə kredit portfelinin yenidən qurulması və yenidən
             maliyyələşdirilməsi xidmətləri göstərir:
           </p>
-          <ul className="list-disc list-outside pl-3 2xl:pl-3 text-black space-y-3 text-base md:text-[16px] font-light marker:text-[8px] marker:text-black">
+          <ul className="list-disc list-outside pl-3 2xl:pl-3 text-black space-y-3 text-base md:text-[16px] font-light text-black">
             {data1.map((d, index) => {
               return <li key={index}>{d}</li>;
             })}
@@ -89,7 +89,7 @@ const Maliyye = () => {
             layihələrinin planlaşdırılması və həyata keçirilməsində kompleks
             vəzifələri həll etməyə imkan verir.
           </p>
-          <ul className="list-disc list-outside pl-3 2xl:pl-3 text-black space-y-3 text-base md:text-[16px] font-light marker:text-[8px] marker:text-black">
+          <ul className="list-disc list-outside pl-3 2xl:pl-3 text-black space-y-3 text-base md:text-[16px] font-light text-black">
             {data2.map((d, index) => {
               return <li key={index}>{d}</li>;
             })}
