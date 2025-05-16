@@ -1,12 +1,10 @@
 import AboutUs from "../../Components/AboutUs/AboutUs";
 import Advantages from "../../Components/Advantages/Advantages";
 import ContactUs from "../../Components/ContactUs/ContactUs";
-import Slide from "../../Components/Slide/Slide";
 
 const About = () => {
   return (
     <>
-      <Slide />
       <AboutUs />
       <div className="w-3/5 mx-auto  bg-gradient-to-r from-transparent via-black to-transparent h-[1px] my-30"></div>
       <Advantages bg={"#fff"} />

@@ -9,7 +9,9 @@ import Vergi from "../Pages/Vergi/Vergi";
 import HR from "../Pages/HR/HR";
 import Maliyye from "../Pages/Maliyye/Maliyye";
 import Huquq from "../Pages/Huquq/Huquq";
-import Meslehet from "../Pages/Meslehet/Meslehet";
+import Qida from "../Pages/Qida/Qida";
+import Satinalma from "../Pages/Satinalma/Satinalma";
+import Muessise from "../Pages/Muessise/Muessise";
 
 const PublicRoutes = () => {
   return (
@@ -19,12 +21,14 @@ const PublicRoutes = () => {
         <Route path="/haqqımızda" element={<About />} />
         <Route path="/əlaqə" element={<Contact />} />
         <Route path="/audit" element={<Audit />} />
-        <Route path="/muhasibat" element={<Muhasibat />} />
+        <Route path="/mühasibat" element={<Muhasibat />} />
         <Route path="/vergi" element={<Vergi />} />
         <Route path="/hr" element={<HR />} />
-        <Route path="/maliyye" element={<Maliyye />} />
-        <Route path="/huquq" element={<Huquq />} />
-        <Route path="/meslehet" element={<Meslehet/>} />
+        <Route path="/maliyyə" element={<Maliyye />} />
+        <Route path="/hüquq" element={<Huquq />} />
+        <Route path="/qida" element={<Qida/>} />
+        <Route path="/satınalma" element={<Satinalma/>} />
+        <Route path="/1c-proqramı" element={<Muessise/>} />
       </Routes>
     </Layout>
   );

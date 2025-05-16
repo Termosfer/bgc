@@ -11,46 +11,54 @@ import huquq from "../../assets/hquq_v_vkil.png.webp";
 import hr from "../../assets/hr.png.webp";
 import c from "../../assets/11256101.png";
 
-import AboutUs from "../../Components/AboutUs/AboutUs";
-import Advantages from "../../Components/Advantages/Advantages";
 import ContactUs from "../../Components/ContactUs/ContactUs";
+import { Link } from "react-router";
 const Home = () => {
   const data2 = [
     {
       image: muhasibat,
       title: "Mühasibat uçotu",
+      link:"mühasibat"
     },
     {
       image: maliyye,
       title: "Maliyyə konsaltinq",
+      link:"maliyyə"
     },
     {
       image: audit,
       title: "Audit xidməti",
+      link:"audit"
     },
     {
       image: meslehet,
       title: "Qida Təhlükəsizliyi",
+      link:"qida"
     },
     {
       image: autsorsinq,
       title: "Dövlət satınalmaları",
+      link:"satınalma"
     },
     {
       image: vergi,
       title: "Vergi məsələləri ",
+      link:"vergi"
     },
     {
       image: huquq,
       title: "Hüquqi məsləhət və vəkil xidməti",
+      link:"hüquq"
     },
     {
       image: hr,
       title: "İnsan Resursları (HR) üzrə xidmətlər",
+      link:"hr"
     },
     {
       image: c,
-      title: "1C 8.3 Müəssisə proqram təminatı üzrə xidmətlər",
+      title: "1C Müəssisə proqramı üzrə xidmətlər",
+      link:"1c-proqramı"
     },
   ];
 
@@ -104,8 +112,7 @@ const Home = () => {
   return (
     <>
       <Slide />
-      <AboutUs />
-      <Advantages bg={"#f5f5f5"} />
+
       <section className="py-12 md:py-20 bg-white">
         <div className="container mx-auto px-4 lg:w-5/6">
           <div className="flex flex-col lg:flex-row gap-8 lg:gap-12 xl:gap-16">
@@ -127,10 +134,6 @@ const Home = () => {
                   strategiyasının həyata keçirməsi, nəticədə mümkün problemlərin
                   yaranmasının qarşısının alınmasıdır.
                 </p>
-                <p className="text-base md:text-lg leading-relaxed text-gray-600">
-                  Fəaliyyət dövrü ərzində ölkənin qanunlarının icrasına nail
-                  olmaqda vasitəçi rolunu aparmaq.
-                </p>
               </div>
             </div>
 
@@ -149,7 +152,7 @@ const Home = () => {
       <section className="py-20">
         <div className="text-center  mx-auto">
           <h3 className="text-[40px] font-semibold mb-10">Xidmətlərimiz</h3>
-          <p className="px-5 md:px-0  xl:w-[45%] 2xl:w-[35%] mx-auto text-[20px] leading-[2] font-[300]">
+          <p className="px-5 md:px-0  xl:w-[45%] 2xl:w-[37%] mx-auto text-[20px] leading-[2] font-[300]">
             Digər konsaltinq şirkətlərindən fərqli olaraq Biznes Qarant
             Konsaltinq sahibkarın maraqlarını diqqətdə saxlayaraq qarşılıqlı
             razılaşma əsasında müəyyən güzəştlər tətbiq edir. Hədəfimiz istər
@@ -157,22 +160,19 @@ const Home = () => {
             keyfiyyətli və etibarlı xidmətlərlə təmin etməkdir.
           </p>
         </div>
-        <div
-          className="grid grid-cols-1 md:grid-cols-1 lg:grid-cols-4 gap-8 w-4/5 mx-auto py-20
-  [&>*]:border-b-2 [&>*]:border-[#667a94]
-  [&>*:last-child]:border-b-0
-  lg:[&>*]:border-b-0
-  lg:[&>*:not(:nth-child(4n))]:border-r-2 lg:[&>*]:border-[#667a94]"
-        >
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 w-4/5 mx-auto py-20">
           {data2.map((d, index) => (
-            <div className="flex flex-col items-center py-6 px-10" key={index}>
+            <Link to={`/${d.link}`}
+              key={index}
+              className="flex flex-col items-center bg-white rounded-xl shadow-md hover:shadow-lg transition-shadow p-8 text-center"
+            >
               <img
                 src={d.image}
                 alt={d.title}
-                className="h-24 mb-4 object-contain"
+                className="h-24 w-24 mb-4 object-contain"
               />
-              <h4 className="text-[20px] font-bold text-center">{d.title}</h4>
-            </div>
+              <h4 className="text-xl font-semibold">{d.title}</h4>
+            </Link>
           ))}
         </div>
         <div className="w-3/5 mx-auto  bg-gradient-to-r from-transparent via-black to-transparent h-[2px]"></div>
@@ -183,7 +183,8 @@ const Home = () => {
             Fəaliyyət Sahələri
           </h3>
           <p className="xl:w-[45%] 2xl:w-[35%] mx-auto text-[20px] leading-[2] font-[300]">
-            Biznes Qarant Konsaltinq sənaye müəssisələri, kiçik və orta biznes subyektləri, eləcə də iri və çoxşaxəli şirkətlərlə əməkdaşlıq edir.
+            Biznes Qarant Konsaltinq sənaye müəssisələri, kiçik və orta biznes
+            subyektləri, eləcə də iri və çoxşaxəli şirkətlərlə əməkdaşlıq edir.
           </p>
         </div>
         <div className="grid  grid-cols-1 md:grid-cols-2 mx-auto w-full  md:w-3/4  lg:mx-[20%] sm:px-5 py-20">
