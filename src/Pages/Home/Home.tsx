@@ -18,47 +18,47 @@ const Home = () => {
     {
       image: muhasibat,
       title: "Mühasibat uçotu",
-      link:"mühasibat"
+      link: "mühasibat",
     },
     {
       image: maliyye,
       title: "Maliyyə konsaltinq",
-      link:"maliyyə"
+      link: "maliyyə",
     },
     {
       image: audit,
       title: "Audit xidməti",
-      link:"audit"
+      link: "audit",
     },
     {
       image: meslehet,
       title: "Qida Təhlükəsizliyi",
-      link:"qida"
+      link: "qida",
     },
     {
       image: autsorsinq,
       title: "Dövlət satınalmaları",
-      link:"satınalma"
+      link: "satınalma",
     },
     {
       image: vergi,
       title: "Vergi məsələləri ",
-      link:"vergi"
+      link: "vergi",
     },
     {
       image: huquq,
       title: "Hüquqi məsləhət və vəkil xidməti",
-      link:"hüquq"
+      link: "hüquq",
     },
     {
       image: hr,
       title: "İnsan Resursları (HR) üzrə xidmətlər",
-      link:"hr"
+      link: "hr",
     },
     {
       image: c,
       title: "1C Müəssisə proqramı üzrə xidmətlər",
-      link:"1c-proqramı"
+      link: "1c-proqramı",
     },
   ];
 
@@ -115,7 +115,12 @@ const Home = () => {
 
       <section className="py-12 md:py-20 bg-white">
         <div className="container mx-auto px-4 lg:w-5/6">
-          <div className="flex flex-col lg:flex-row gap-8 lg:gap-12 xl:gap-16">
+          <div
+            className="flex flex-col lg:flex-row gap-8 lg:gap-12 xl:gap-16"
+            data-aos="fade-zoom-in"
+            data-aos-easing="ease-in-back"
+            data-aos-duration="1000"
+          >
             <div className="w-full lg:w-1/2 flex flex-col justify-center">
               <div className="mb-6 lg:mb-10">
                 <h2 className="text-3xl md:text-4xl font-bold mb-4 lg:mb-6">
@@ -150,7 +155,12 @@ const Home = () => {
         </div>
       </section>
       <section className="py-20">
-        <div className="text-center  mx-auto">
+        <div
+          className="text-center  mx-auto"
+          data-aos="fade-zoom-in"
+          data-aos-easing="ease-in-back"
+          data-aos-duration="1000"
+        >
           <h3 className="text-[40px] font-semibold mb-10">Xidmətlərimiz</h3>
           <p className="px-10 lg:px-0  xl:w-[45%] 2xl:w-[37%] mx-auto text-[20px] leading-[2] font-[300]">
             Digər konsaltinq şirkətlərindən fərqli olaraq Biznes Qarant
@@ -162,7 +172,8 @@ const Home = () => {
         </div>
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 w-4/5 mx-auto py-20">
           {data2.map((d, index) => (
-            <Link to={`/${d.link}`}
+            <Link
+              to={`/${d.link}`}
               key={index}
               className="flex flex-col items-center bg-white rounded-xl shadow-md hover:shadow-lg transition-shadow p-8 text-center"
             >
@@ -175,10 +186,20 @@ const Home = () => {
             </Link>
           ))}
         </div>
-        <div className="w-3/5 mx-auto  bg-gradient-to-r from-transparent via-black to-transparent h-[2px]"></div>
+        <div
+          className="w-3/5 mx-auto  bg-gradient-to-r from-transparent via-black to-transparent h-[2px]"
+          data-aos="fade-zoom-in"
+          data-aos-easing="ease-in-back"
+          data-aos-duration="1000"
+        ></div>
       </section>
       <section className="w-full">
-        <div className="text-center">
+        <div
+          className="text-center"
+          data-aos="fade-zoom-in"
+          data-aos-easing="ease-in-back"
+          data-aos-duration="1000"
+        >
           <h3 className="text-[40px] font-semibold mb-10">
             Fəaliyyət Sahələri
           </h3>

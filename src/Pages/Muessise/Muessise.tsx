@@ -30,54 +30,95 @@ const Muessise = () => {
       </div>
       <section className="bg-white py-16">
         <div className="w-11/12 max-w-6xl mx-auto px-4 md:px-8 pb-40">
-          <h1 className="text-3xl md:text-4xl font-bold text-gray-800 mb-6">
+          <h1
+            className="text-3xl md:text-4xl font-bold text-gray-800 mb-6"
+            data-aos="fade-zoom-in"
+            data-aos-easing="ease-in-back"
+          >
             1C 8.3 Müəssisə proqram təminatı üzrə xidmətlərimiz
           </h1>
-          <p className="text-blacktext-base md:text-[16px] font-light  leading-relaxed">
+          <p
+            className="text-blacktext-base md:text-[16px] font-light  leading-relaxed"
+            data-aos="fade-zoom-in"
+            data-aos-easing="ease-in-back"
+          >
             BGC 1C Mühasibat sistemlərinin yazılması ilə yanaşı peşəkar texniki
-            dəstək və təlimlər təqdim edir.
-            1C Mühasibat proqram təminatının hazırlanması zamanı diqqət tələb
-            edən əsas məqam proqramın sifarişçi müəssisənin fəaliyyətinə tam
-            uyğun olmasıdır. Bunun təmin edilməsi məqsədilə proqram təminatının
-            hazırlanmasından əvvəl sifarişçinin bütün tələbləri ətraflı şəkildə
-            öyrənilir, müəssisənin fəaliyyəti təhlil olunur, uçot
-            əməliyyatlarının xüsusiyyətləri araşdırılır və yalnız bundan sonra
-            sifarişə uyğun təkmilləşdirilmiş proqram təminatı yazılır.
-            Eyni zamanda, təqdim olunan proqram təminatına uyğun fərdi və
-            korporativ təlimlərin təşkili də təklif olunur. Proqram təminatının
-            sabit və effektiv işləməsi isə göstərdiyimiz texniki dəstək
-            sayəsində daha da asanlaşdırılır. Təlimlər və texniki dəstək peşəkar
-            və təcrübəli əməkdaşlarımız tərəfindən həyata keçirilir.
+            dəstək və təlimlər təqdim edir. 1C Mühasibat proqram təminatının
+            hazırlanması zamanı diqqət tələb edən əsas məqam proqramın sifarişçi
+            müəssisənin fəaliyyətinə tam uyğun olmasıdır. Bunun təmin edilməsi
+            məqsədilə proqram təminatının hazırlanmasından əvvəl sifarişçinin
+            bütün tələbləri ətraflı şəkildə öyrənilir, müəssisənin fəaliyyəti
+            təhlil olunur, uçot əməliyyatlarının xüsusiyyətləri araşdırılır və
+            yalnız bundan sonra sifarişə uyğun təkmilləşdirilmiş proqram
+            təminatı yazılır. Eyni zamanda, təqdim olunan proqram təminatına
+            uyğun fərdi və korporativ təlimlərin təşkili də təklif olunur.
+            Proqram təminatının sabit və effektiv işləməsi isə göstərdiyimiz
+            texniki dəstək sayəsində daha da asanlaşdırılır. Təlimlər və texniki
+            dəstək peşəkar və təcrübəli əməkdaşlarımız tərəfindən həyata
+            keçirilir.
           </p>
-          
+
           <div className="my-20">
-            <h1 className="text-3xl md:text-2xl font-bold text-gray-800 mb-6">
+            <h1
+              className="text-3xl md:text-2xl font-bold text-gray-800 mb-6"
+              data-aos="fade-up"
+            >
               1C proqram təminatı ilə uçotun qurulması
             </h1>
             <ul className="list-disc list-outside pl-3 2xl:pl-3 text-black space-y-3 text-base md:text-[16px] font-light text-black">
               {data.map((d, index) => {
-                return <li key={index}>{d}</li>;
+                return (
+                  <li
+                    key={index}
+                    data-aos="fade-up"
+                    data-aos-delay={index * 100}
+                  >
+                    {d}
+                  </li>
+                );
               })}
             </ul>
           </div>
           <div className="mb-20">
-            <h1 className="text-3xl md:text-2xl font-bold text-gray-800 mb-6">
+            <h1
+              className="text-3xl md:text-2xl font-bold text-gray-800 mb-6"
+              data-aos="fade-up"
+            >
               1C proqram təminatı üzrə təlimlərin keçirilməsi
             </h1>
             <ul className="list-disc list-outside pl-3 2xl:pl-3 text-black space-y-3 text-base md:text-[16px] font-light text-black">
               {data1.map((d, index) => {
-                return <li key={index}>{d}</li>;
+                return (
+                  <li
+                    key={index}
+                    data-aos="fade-up"
+                    data-aos-delay={index * 100}
+                  >
+                    {d}
+                  </li>
+                );
               })}
             </ul>
           </div>
           <div>
-            <h1 className="text-3xl md:text-2xl font-bold text-gray-800 mb-6">
+            <h1
+              className="text-3xl md:text-2xl font-bold text-gray-800 mb-6"
+              data-aos="fade-up"
+            >
               1C proqram təminatı üzrə fəaliyyət göstərən müəssisələrə
               konsultasiya xidməti
             </h1>
             <ul className="list-disc list-outside pl-3 2xl:pl-3 text-black space-y-3 text-base md:text-[16px] font-light text-black">
               {data2.map((d, index) => {
-                return <li key={index}>{d}</li>;
+                return (
+                  <li
+                    key={index}
+                    data-aos="fade-up"
+                    data-aos-delay={index * 100}
+                  >
+                    {d}
+                  </li>
+                );
               })}
             </ul>
           </div>

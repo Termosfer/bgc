@@ -16,14 +16,14 @@ const Qida = () => {
         <img src={img} alt="img" className=" w-full h-full" />
       </div>
       <section className="bg-white py-16">
-        <div className="w-11/12 max-w-6xl mx-auto px-4 md:px-8 pb-40">
+        <div className="w-11/12 max-w-6xl mx-auto px-4 md:px-8 pb-40" data-aos="fade-up">
           <h1 className="text-3xl md:text-4xl font-bold text-gray-800 mb-6">
             Qida təhlükəsizliyi sahəsində göstərilən xidmətlər
           </h1>
           
-           <ul className="list-disc list-outside pl-3 2xl:pl-3 text-black space-y-3 text-base md:text-[16px] font-light text-black">
+           <ul className="list-disc list-outside pl-3 2xl:pl-3 text-black space-y-3 text-base md:text-[16px] font-light text-black" >
             {data.map((d, index) => {
-              return <li key={index}>{d}</li>;
+              return <li key={index} >{d}</li>;
             })}
           </ul>
         </div>
