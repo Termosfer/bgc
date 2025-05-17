@@ -35,7 +35,7 @@ const ContactUs: React.FC<ContactUsProps> = ({ bg }) => {
           <h3 className="text-[36px] sm:text-[40px] font-semibold">Əlaqə</h3>
         </div>
 
-        <div className="flex flex-col items-center md:items-baseline gap-14 lg:flex-row lg:justify-evenly">
+        <div className="flex flex-col items-center  lg:items-baseline gap-14 lg:flex-row lg:justify-evenly">
           {data4.map((d, index) => (
             <div
               key={index}

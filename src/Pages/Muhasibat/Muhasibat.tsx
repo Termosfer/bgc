@@ -79,7 +79,7 @@ const Muhasibat = () => {
           })}
         </ul>
  
-        <h4 className="text-[40px] font-semibold mb-10 mx-auto text-center pt-40 pb-10">İlkin mühasibat uçotunun təşkili və idarə edilməsi</h4>
+        <h4 className="text-[40px] font-semibold mb-10 mx-auto text-center text-wrap pt-40 pb-10 px-10">İlkin mühasibat uçotunun təşkili və idarə edilməsi</h4>
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 mx-auto w-10/12">
           {data1.map((item) => (
             <div

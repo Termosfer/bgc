@@ -59,7 +59,7 @@ const Header = () => {
               Xidmətlər
             </button>
 
-            <div className="text-nowrap absolute bottom-22  right-0 mt-1 z-10 bg-white shadow-md rounded-md opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-opacity duration-200">
+            <div className="text-nowrap absolute top-6  -left-45 mt-1 z-10 bg-white shadow-md rounded-md opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-opacity duration-200">
               <Dropdown />
             </div>
           </li>

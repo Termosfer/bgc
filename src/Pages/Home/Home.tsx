@@ -152,7 +152,7 @@ const Home = () => {
       <section className="py-20">
         <div className="text-center  mx-auto">
           <h3 className="text-[40px] font-semibold mb-10">Xidmətlərimiz</h3>
-          <p className="px-5 md:px-0  xl:w-[45%] 2xl:w-[37%] mx-auto text-[20px] leading-[2] font-[300]">
+          <p className="px-10 lg:px-0  xl:w-[45%] 2xl:w-[37%] mx-auto text-[20px] leading-[2] font-[300]">
             Digər konsaltinq şirkətlərindən fərqli olaraq Biznes Qarant
             Konsaltinq sahibkarın maraqlarını diqqətdə saxlayaraq qarşılıqlı
             razılaşma əsasında müəyyən güzəştlər tətbiq edir. Hədəfimiz istər
@@ -182,7 +182,7 @@ const Home = () => {
           <h3 className="text-[40px] font-semibold mb-10">
             Fəaliyyət Sahələri
           </h3>
-          <p className="xl:w-[45%] 2xl:w-[35%] mx-auto text-[20px] leading-[2] font-[300]">
+          <p className="xl:w-[45%] 2xl:w-[35%] mx-auto text-[20px] leading-[2] font-[300] px-10">
             Biznes Qarant Konsaltinq sənaye müəssisələri, kiçik və orta biznes
             subyektləri, eləcə də iri və çoxşaxəli şirkətlərlə əməkdaşlıq edir.
           </p>
@@ -195,7 +195,7 @@ const Home = () => {
                 key={index}
               >
                 <img src={d.image} alt="image" className="w-8" />
-                <span className="text-[18px] font-semibold text-nowrap">
+                <span className="text-[18px] font-semibold lg:text-nowrap text-wrap">
                   {d.title}
                 </span>
               </div>
