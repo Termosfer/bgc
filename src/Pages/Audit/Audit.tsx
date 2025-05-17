@@ -63,11 +63,11 @@ const Audit = () => {
       <div className="w-full h-[50vh] md:h-[90vh]">
         <img src={img} alt="img" className=" w-full h-full" />
       </div>
-      <section className="bg-white py-16 px-6 md:px-20">
-        <div className="grid md:grid-cols-2 gap-12 items-center px-20">
-          <div>
+      <section className="bg-white py-16 ">
+        <div className="grid md:grid-cols-2 gap-5 items-center md:px-20 px-5">
+          <div className="">
             <h1 className="text-[40px] font-semibold mb-6">Audit Xidmətləri</h1>
-            <p className="text-[18px] leading-8 font-light w-4/5">
+            <p className="text-[18px] leading-8 font-light lg:w-4/5">
               Müstəqil audit biznesin inkişafının əsasıdır. Biz, əsaslı və dəqiq
               audit yoxlamaları aparmağa üstünlük veririk və rəyimiz öz
               etibarlılığı ilə seçilir.
@@ -78,54 +78,54 @@ const Audit = () => {
             {data.map((d, index) => (
               <div
                 key={index}
-                className="w-[250px] h-[250px] flex flex-col items-center justify-center text-center bg-[#ebebeb] rounded-full "
+                className="w-[150px] h-[150px] lg:w-[200px]  lg:h-[200px] xl:w-[250px] xl:h-[250px] flex flex-col items-center justify-center text-center bg-[#ebebeb] rounded-full "
               >
                 <img
                   src={d.image}
                   alt={d.title}
-                  className="w-[100px] h-[100px] object-contain mb-3"
+                  className="w-[60px] w-[60px] lg:w-[100px] lg:h-[100px] object-contain mb-3"
                 />
                 <p className="text-[18px] font-bold">{d.title}</p>
               </div>
             ))}
           </div>
         </div>
-        <div className="mx-auto w-1/2">
-          <div className="grid grid-cols-[200px_1fr] gap-5 my-20 items-start justify-center">
+        <div className="mx-auto md:w-4/5 lg:w-4/5 px-5">
+          <div className="grid md:grid-cols-[200px_1fr] gap-5 my-20 items-start justify-center">
             <h2 className="text-[20px] font-semibold text-black">
               Sərbəst audit
             </h2>
-            <ul className="list-disc list-inside font-light leading-7 space-y-2 text-black">
+            <ul className="list-disc  font-light leading-7 space-y-2 text-black px-5">
               {data1.map((d, index) => (
                 <li key={index}>{d}</li>
               ))}
             </ul>
           </div>
 
-          <div className="grid grid-cols-[200px_1fr] gap-5 mb-20 items-start">
+          <div className="grid md:grid-cols-[200px_1fr] gap-5 mb-20 items-start">
             <h2 className="text-[20px] font-semibold text-black">
               Xüsusi audit
             </h2>
-            <ul className="list-disc list-inside font-light leading-7 space-y-2 text-black">
+            <ul className="list-disc  font-light leading-7 space-y-2 text-black px-5">
               {data2.map((d, index) => (
                 <li key={index}>{d}</li>
               ))}
             </ul>
           </div>
 
-          <div className="grid grid-cols-[200px_1fr] gap-5 mb-20 items-start">
+          <div className="grid md:grid-cols-[200px_1fr] gap-5 mb-20 items-start">
             <h2 className="text-[20px] font-semibold text-black">
               Daxili audit
             </h2>
-            <ul className="list-disc list-inside font-light leading-7 space-y-2 text-black">
+            <ul className="list-disc  font-light leading-7 space-y-2 text-black px-5">
               {data3.map((d, index) => (
                 <li key={index}>{d}</li>
               ))}
             </ul>
           </div>
         </div>
-        <div className="flex flex-col gap-10 ">
-          <div className="flex sm:flex-row flex-col  justify-center mx-auto mb-10 px-5 gap-5">
+        <div className="flex flex-col gap-10 px-5 md:px-0">
+          <div className="flex sm:flex-row flex-col  justify-center mx-auto mb-10 md:px-5 gap-5 lg:gap-18">
             <p className="sm:w-[45%] xl:w-[45%] 2xl:w-[35%]  text-[20px] leading-[2] font-[300] order-1 sm:order-none">
               Biznes Qarant Konsaltinq illərdir otel və restoranlarda yüksək
               keyfiyyətli audit keçirir. Əvvəla, otellərdə yoxlama apararkən
@@ -135,7 +135,7 @@ const Audit = () => {
               Otel işinin auditi
             </h3>
           </div>
-          <p className="sm:w-[45%] xl:w-[45%] 2xl:w-[53%] mx-auto text-[20px] leading-[2] font-[300]">
+          <p className="md:w-3/4 lg:w-3/4 xl:w-2/3 2xl:w-[53%] mx-auto text-[20px] leading-[2] font-[300]">
             Otel biznesi müəssisələrində apardığımız audit, şirkətinizə bütün
             maliyyə axınlarını optimallaşdırmağa, səmərəli mühasibat sistemini
             yaratmağa, mühasibat uçotunu optimallaşdırmağa, vergi və digər
@@ -146,9 +146,9 @@ const Audit = () => {
             əhəmiyyətli maliyyə mənbələrinə qənaət etməklə yanaşı, müəssisənin
             cari maliyyə göstəricilərini də yaxşılaşdıra bilər.
           </p>
-          <ul className="space-y-2 md:text-[18px] text-base font-[300] mx-auto md:w-10/12 lg:w-9/12 xl:w-8/12 2xl:w-7/12 px-5 sm:px-5 md:px-4 lg:px-7 xl:px-4 2xl:px-9 list-disc list-inside text-black ">
-            {data4.map((d) => {
-              return <li>{d}</li>;
+          <ul className="space-y-2 text-[18px] text-base font-[300] mx-auto md:w-9/12 lg:w-9/12 xl:w-8/12 2xl:w-7/12 px-5 sm:px-5 md:px-4 lg:px-5 xl:px-4 2xl:px-9 list-disc  md:list-outside text-black ">
+            {data4.map((d, index) => {
+              return <li key={index}>{d}</li>;
             })}
           </ul>
         </div>

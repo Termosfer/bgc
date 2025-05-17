@@ -2,7 +2,7 @@ import { Link } from "react-router";
 
 const Dropdown = () => {
   return (
-    <ul className="flex flex-col bg-white text-black z-10 space-y-2 p-2 rounded shadow-md overflow-hidden animate-dropdown">
+    <ul className="flex flex-col bg-white text-black space-y-2 p-2 rounded shadow-md">
       <li className="py-1 hover:bg-gray-100 rounded transition-colors duration-200 px-2">
         <Link to="/audit">Audit xidməti</Link>
       </li>
