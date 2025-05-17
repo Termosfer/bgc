@@ -125,7 +125,7 @@ const Audit = () => {
           </div>
         </div>
         <div className="flex flex-col gap-10 px-5 md:px-0">
-          <div className="flex sm:flex-row flex-col  justify-center mx-auto mb-10 md:px-5 gap-5 lg:gap-18">
+          <div className="flex sm:flex-row flex-col  justify-center mx-auto mb-10 md:px-5 gap-5 lg:gap-18 xl:gap-13">
             <p className="sm:w-[45%] xl:w-[45%] 2xl:w-[35%]  text-[20px] leading-[2] font-[300] order-1 sm:order-none">
               Biznes Qarant Konsaltinq illərdir otel və restoranlarda yüksək
               keyfiyyətli audit keçirir. Əvvəla, otellərdə yoxlama apararkən
@@ -146,7 +146,7 @@ const Audit = () => {
             əhəmiyyətli maliyyə mənbələrinə qənaət etməklə yanaşı, müəssisənin
             cari maliyyə göstəricilərini də yaxşılaşdıra bilər.
           </p>
-          <ul className="space-y-2 text-[18px] text-base font-[300] mx-auto md:w-9/12 lg:w-9/12 xl:w-8/12 2xl:w-7/12 px-5 sm:px-5 md:px-4 lg:px-5 xl:px-4 2xl:px-9 list-disc  md:list-outside text-black ">
+          <ul className="space-y-2 text-[18px] text-base font-[300] mx-auto md:w-9/12 lg:w-9/12 xl:w-8/12 2xl:w-7/12 px-5 sm:px-5 md:px-4 lg:px-5 xl:px-4 2xl:px-9 list-disc   xl:list-inside text-black ">
             {data4.map((d, index) => {
               return <li key={index}>{d}</li>;
             })}
