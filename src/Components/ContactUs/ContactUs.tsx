@@ -39,7 +39,7 @@ const ContactUs: React.FC<ContactUsProps> = ({ bg }) => {
           {data4.map((d, index) => (
             <div
               key={index}
-              className="flex flex-col gap-5 items-center justify-center "
+              className="flex flex-col gap-5 items-center justify-center text-center"
             >
               <img src={d.image} alt={d.title} className="w-16" />
               <h4 className="font-bold text-[22px]">{d.title}</h4>
