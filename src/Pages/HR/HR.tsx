@@ -26,7 +26,7 @@ const HR = () => {
             İnsan Resursları (HR) üzrə xidmətlər
           </h1>
           <div className="flex justify-center">
-            <ul className="list-disc list-inside space-y-4 text-black text-base md:text-[20px] font-light text-black max-w-2xl pl-4 md:pl-0">
+            <ul className="list-disc  space-y-4 text-black text-base md:text-[20px] font-light text-black max-w-2xl pl-4 md:pl-0">
               {data.map((d, index) => (
                 <li key={index} className="text-left">
                   {d}
@@ -41,7 +41,7 @@ const HR = () => {
             Kadrlar üzrə uçotun aparılmasına aiddir:
           </h1>
           <div className="flex justify-center">
-            <ul className="list-disc list-inside space-y-4 text-black text-base md:text-[18px] font-light list-disc pl-5 text-black  md:pl-30 lg:pl-25">
+            <ul className="list-disc  space-y-4 text-black text-base md:text-[18px] font-light  pl-5 text-black  md:pl-30 lg:pl-25">
               {data1.map((d, index) => (
                 <li key={index} className="max-w-[580px]">
                   {d}
