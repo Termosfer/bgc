@@ -22,7 +22,7 @@ const HeaderMenu: React.FC<HeaderMenuProps> = ({  setShowServices, showServices,
         ${isOpen ? "max-h-auto opacity-100 py-4" : "max-h-0 opacity-0 py-0"}
       `}
     >
-      {/* Logo */}
+
       <img src={bqk} alt="bqk" className="w-36  my-4" />
 
       <ul className="flex flex-col gap-4 text-[18px] font-semibold w-full">
@@ -40,7 +40,7 @@ const HeaderMenu: React.FC<HeaderMenuProps> = ({  setShowServices, showServices,
             Xidmətlər
           </button>
 
-          {/* Burada Dropdown-u həmişə DOM-da saxlayırıq, animasiyanı CSS ilə idarə edirik */}
+          
           <div
             className={`overflow-hidden transition-[max-height,opacity,transform] duration-500 ease-in-out
             ${showServices ? "max-h-auto opacity-100 translate-y-0" : "max-h-0 opacity-0 -translate-y-3"}
