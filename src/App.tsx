@@ -7,7 +7,7 @@ import AOS from "aos";
 function App() {
   AOS.init({
     once: true,
-    duration: 1000,
+    duration: 700,
   });
   return (
     <BrowserRouter>
