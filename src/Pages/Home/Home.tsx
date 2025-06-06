@@ -119,7 +119,7 @@ const Home = () => {
             className="flex flex-col lg:flex-row gap-8 lg:gap-12 xl:gap-16"
             data-aos="fade-zoom-in"
             data-aos-easing="ease-in-back"
-            data-aos-duration="1000"
+            data-aos-duration="700"
           >
             <div className="w-full lg:w-1/2 flex flex-col justify-center">
               <div className="mb-6 lg:mb-10">
@@ -159,7 +159,7 @@ const Home = () => {
           className="text-center  mx-auto"
           data-aos="fade-zoom-in"
           data-aos-easing="ease-in-back"
-          data-aos-duration="1000"
+          data-aos-duration="700"
         >
           <h3 className="text-[40px] font-semibold mb-10">Xidmətlərimiz</h3>
           <p className="px-10 lg:px-0  xl:w-[45%] 2xl:w-[37%] mx-auto text-[20px] leading-[2] font-[300]">
@@ -190,7 +190,7 @@ const Home = () => {
           className="w-3/5 mx-auto  bg-gradient-to-r from-transparent via-black to-transparent h-[2px]"
           data-aos="fade-zoom-in"
           data-aos-easing="ease-in-back"
-          data-aos-duration="1000"
+          data-aos-duration="700"
         ></div>
       </section>
       <section className="w-full">
@@ -198,7 +198,7 @@ const Home = () => {
           className="text-center"
           data-aos="fade-zoom-in"
           data-aos-easing="ease-in-back"
-          data-aos-duration="1000"
+          data-aos-duration="700"
         >
           <h3 className="text-[40px] font-semibold mb-10">
             Fəaliyyət Sahələri
