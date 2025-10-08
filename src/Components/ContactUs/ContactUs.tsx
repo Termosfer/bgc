@@ -11,7 +11,7 @@ const ContactUs: React.FC<ContactUsProps> = ({ bg }) => {
     {
       image: phone,
       title: "Telefon",
-      subtitle: ["+99412 568 00 89", "+99450 250 83 30"],
+      subtitle: ["+99412 568 00 89", "+99450 250 83 30", "+99410 555 31 30"],
     },
     {
       image: location,
@@ -45,7 +45,7 @@ const ContactUs: React.FC<ContactUsProps> = ({ bg }) => {
               <h4 className="font-bold text-[22px]">{d.title}</h4>
               <div className="font-light space-y-1 text-[16px] ">
                 {d.subtitle.map((line, i) => (
-                  <div key={i}>{line}</div>
+                  <div key={i} >{line}</div>
                 ))}
               </div>
             </div>
